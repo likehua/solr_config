@@ -1,0 +1,12 @@
+<dataConfig>
+<dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/world" user="root" password="root" batchSize="-1" />
+    <document name="Suggest">
+        <entity name="Suggest" query="select uuid() as guid,t.* from poi t "  transformer="RegexTransformer">
+            <field column="guid" name="id" />
+			 <field column="DOCID" name="SGT_OID" />
+            <field column="nameforStore" name="SGT_NAME" />
+            <field column="addressforStore" name="SGT_ADDRESS" />
+            <field column="totalcity" name="POI_CITY" splitBy=" " />
+        </entity>
+    </document>
+</dataConfig>

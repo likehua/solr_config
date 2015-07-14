@@ -1,0 +1,22 @@
+<dataConfig>
+<dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/world" user="root" password="root" batchSize="-1" />
+    <document name="POI">
+        <entity name="POI" query="select * from POI" >
+            <field column="DOCID" name="id" />
+			 <field column="DOCID" name="POI_OID" />
+            <field column="nameforStore" name="POI_NAME" />
+			<field column="nameforStore" name="POI_NAME_SUGGEST" />
+            <field column="addressforStore" name="POI_ADDRESS" />
+			<field column="addressforStore" name="POI_ADDRESS_SUGGEST" />
+            <field column="phoneforStore" name="POI_PHONE" />
+			<field column="type" name="POI_TYPE" splitBy=" " />
+            <field column="url" name="POI_URL" />
+			<field column="dianping" name="POI_DIANPING" />
+            <field column="totalcity" name="POI_CITY" splitBy=" " />
+			<field column="tag" name="POI_TAG" />
+            <field column="brand" name="POI_BRAND" />
+			<field column="lat" name="POI_LAT" />
+			<field column="lon" name="POI_LON" />
+        </entity>
+    </document>
+</dataConfig>

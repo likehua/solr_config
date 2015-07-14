@@ -1,0 +1,11 @@
+<dataConfig>
+<dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/word" user="root" password="root" />
+    <document name="POI">
+        <entity name="POI" query="select * from job">
+            <field column="ID" name="id" />
+            <field column="position" name="POI_NAME" />
+            <field column="qualifications" name="POI_ADDRESS" />
+            <field column="responsibilities" name="POI_DESCRIPTION" />
+        </entity>
+    </document>
+</dataConfig>
